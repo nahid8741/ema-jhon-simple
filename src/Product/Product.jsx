@@ -6,7 +6,7 @@ import './Product.css';
  
 
  
-const Product = (props) => {
+const Product  = (props) => {
     const {img, name, ratings, price, seller} = props.product;
     const handleAddToCard = props.handleAddToCard;
     return (
