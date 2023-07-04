@@ -12,13 +12,13 @@ const Product = (props) => {
     return (
         <div className='product'>
            <img src={img} alt="" />
-           <div className='product-info'>
+           {/* <div className='product-info'> */}
            <h3 className='product-name'>{name}</h3>
            <h4>Price:${price}</h4>
            <p>Manufacture:{seller}</p>
            <p>Rating:{ratings} Stars</p>
-           </div>
-         <button onClick={()=>handleAddToCard(props.product)} className='btn-cart'>
+           {/* </div> */}
+         <button className='btn-cart' onClick={()=>handleAddToCard(props.product)}>
             Add to Cart
          <FontAwesomeIcon icon={faShoppingCart} />
             </button> 
